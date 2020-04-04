@@ -1,3 +1,40 @@
+* {
+  font-family: 'Poppins';
+}
+
+h1 {
+  font-size:5rem;
+  font-family: 'Righteous';
+}
+
+h2 {
+  font-family: 'Righteous';
+}
+
+.navbar-brand {
+  font-family: 'Righteous';
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
 .App {
   text-align: center;
 }
