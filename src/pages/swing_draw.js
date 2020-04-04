@@ -27,11 +27,11 @@ class SwingDraw extends React.Component {
                     </SectionHeader>
                     <Container className="spacer">
                         <Row>
-                            <Col md={6}>
+                            <Col md={6} className="spacer">
                                 <p>
                                     This program started with the idea of making a simple drawing app using Java. I was in my school's AP Computer Science class at
                                     the time and I had become somewhat bored by the slow pace of the course, so I started to learn more about Java on my own time. In
-                                    my opinion, the best way to learne is by doing, so I set myself a goal for a project, in this case, I was intrigued by the idea of
+                                    my opinion, the best way to learn is by doing, so I set myself a goal for a project, in this case, I was intrigued by the idea of
                                     making a simple drawing program. It would involve a lot of thinking and would leave a lot of room in terms of both starting off the
                                     project and adding more features later on. I spent around two weeks creating the original application that involved the ability
                                     to draw, choose colors, choose different stroke sizes, erase, save, and open images in the program. Using the jpen library, I was also

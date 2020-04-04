@@ -26,8 +26,7 @@ class AnimationDesign extends React.Component {
                                 <Carousel.Caption>
                                     <h2 class="text-center"> Gilleto </h2>
                                     <p className="spacer">
-                                        Gilleto is a musician from Greece who produces electronic/EDM music. I recently gave him a branding overhaul and have created a visualizer
-                                        for him as well.
+                                        Gilleto is a musician from Greece who produces electronic/EDM music. I gave him a branding overhaul and have created a visualizer for him as well.
                                     </p>
                                 </Carousel.Caption>
                             </Carousel.Item>
@@ -37,7 +36,7 @@ class AnimationDesign extends React.Component {
                                     <h2 class="text-center"> CJ Paghasian </h2>
                                     <p className="spacer">
                                         CJ Paghasian is a design student at the University of California Davis. I helped him establish a portfolio website which he can use in
-                                        his resumes.
+                                        his job applications.
                                     </p>
                                 </Carousel.Caption>
                             </Carousel.Item>
@@ -65,7 +64,7 @@ class AnimationDesign extends React.Component {
                                 <Carousel.Caption>
                                     <h2 class="text-center"> Blender Bike </h2>
                                     <p className="spacer">
-                                        Using assets created in an engineering class that I took my junior, year of high school I created an animation that puts this bike together.
+                                        Using assets created in an engineering class that I took my junior year of high school, I created an animation that puts a bike together.
                                         This is a sample from that video.
                                     </p>
                                 </Carousel.Caption>
@@ -88,18 +87,17 @@ class AnimationDesign extends React.Component {
                     <SectionHeader>Commissions</SectionHeader>
                     <Container className="spacer">
                         <Row>
-                            <Col md={6}>
-                                <p>I help people establish their brand and their name through graphic design and animation. I specialize in working together with
-                                Youtube channels such as those below. The Youtube channel package usually includes a logo, banner, intro, and outro. I can start
+                            <Col md={6} className="spacer">
+                                <p className="spacer">I help people establish their brand and their name through graphic design and animation. I specialize in working together with
+                                Youtube channels such as those above. The Youtube channel package usually includes a logo, banner, intro, and outro. I can start
                                 off with simple questions if you are unsure of which direction you want to go in, and eventually we will narrow things down to a
                                 central theme.</p>
 						
-                                <p>More special commissions include websites and visualizers. I can build you a website from the ground up and will make sure to contact
+                                <p className="spacer">More special commissions include websites and visualizers. I can build you a website from the ground up and will make sure to contact
                                 you frequently throughout the entire process to make sure that you enjoy the direction in which the website is going.</p>
 						
                                 <p>Visualizers usually come as part of a full branding package, but if you have already established your brand, you can still ask me for a custom
-                                visualizer. If you are interested in any of these services, check out my contact information and estimated prices to the right. Below
-                                you can find some samples of my work.</p>
+                                visualizer. If you are interested in any of these services, check out my contact information and estimated prices to the right.</p>
                             </Col>
                             <Col md={6} className="align-self-center">
                                 Please know that these prices are negotiable and are only meant as general guidelines. Depending on the size of the project, I might

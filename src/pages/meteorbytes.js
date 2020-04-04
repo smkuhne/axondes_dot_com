@@ -27,7 +27,7 @@ class Meteorbytes extends React.Component {
                     </SectionHeader>
                     <Container className="spacer">
                         <Row>
-                            <Col md={6}>
+                            <Col md={6} className="spacer">
                                 <p>
                                     This project came about, because I wanted to fully utilize the power of Gamemaker Studio. I proceeded to brainstorm and came
                                     to the conclusion that a space arcade-style shooter would be a lot of fun to make.

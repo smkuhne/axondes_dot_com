@@ -27,7 +27,7 @@ class Marbleous extends React.Component {
                     </SectionHeader>
                     <Container className="spacer">
                         <Row>
-                            <Col md={6}>
+                            <Col md={6} className="spacer">
                                 <p>
                                     This project started off as part of a month-long hackathon, hosted by the company that made this game engine, Playcanvas.
                                     They provided all entrants with some of the initial materials and a theme. These initial materials included the very simple platforms,

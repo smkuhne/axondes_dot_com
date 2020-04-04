@@ -3,38 +3,63 @@ import AxondesFooter from '../components/axondes_footer';
 import TileRow from '../components/tile_row';
 import SquareTile from '../components/square_tile';
 import RectangleTile from '../components/rectangular_tile';
+import Particle from 'react-particles-js';
 import { Jumbotron, Col, Row, Container } from 'react-bootstrap';
 
 class Index extends React.Component {
     render() {
         return (
             <div>
-                <Jumbotron className="text-center">
+                <div className="particle-index">
+                    <Particle
+                    height="100%"
+                    params={{
+                        particles: {
+                            number: {
+                                value: window.innerWidth / 15,
+                            },
+                            color: {
+                                value: ['#858585']
+                            },
+                            line_linked: {
+                                color: '#0000ff',
+                                opacity: 1
+                            }
+                        }}}/>
+                </div>
+                
+                <Jumbotron className="text-center" style={{
+                    overflow: "hidden"
+                }}>
                     <Container>
                         <Row>
                             <Col md={8}>
-                                <video src="videos/a.mp4" poster="data:image/png,AAAA" type="video/mp4" autoPlay muted loop id="animated-a"/>
+                                <video src="videos/a.mp4" poster="data:image/png,AAAA" type="video/mp4" autoPlay muted loop id="animated-a" className="a"/>
                             </Col>
                             <Col md={4} className="align-self-center">
                                 <h1>This is Axondes</h1>
-                                <p>Programmer, Animator, Graphic Designer</p>
+                                <p>Programmer, Student, Animator, Graphic Designer</p>
                             </Col>
                         </Row>
                     </Container>
                 </Jumbotron>
 
+                <TileRow id="Work">
+                    <RectangleTile banner="images/experience/banner.png" href="/experience">Work Experience</RectangleTile>
+                    <RectangleTile banner="images/hackathons/banner.png" href="/hackathons">Hackathons</RectangleTile>
+                </TileRow>
                 <TileRow>
-                    <RectangleTile banner="images/marbleous/banner.png" href="/marbleous">Marbleous</RectangleTile>
-                    <RectangleTile banner="images/swingdraw/banner.png" href="/swingdraw">Swing Draw</RectangleTile>
+                    <RectangleTile banner="images/aggiestudios/banner.png" href="/aggiestudios">Aggie Studios</RectangleTile>
+                    <RectangleTile banner="images/projects/banner.png" href="/projects">Projects</RectangleTile>
                 </TileRow>
                 <TileRow>
                     <SquareTile banner="images/animationdesign/banner.png" href="/animationdesign">Animation and Design</SquareTile>
                     <SquareTile banner="images/meteorbytes/banner.png" href="/meteorbytes">Meteorbytes</SquareTile>
-                    <SquareTile banner="images/meteorbytes/banner.png" href="/coursework">Relevant Coursework</SquareTile>
+                    <SquareTile banner="images/coursework/banner.png" href="/coursework">Relevant Coursework</SquareTile>
                 </TileRow>
                 <TileRow>
-                    <RectangleTile banner="images/aggiestudios/banner.png" href="/aggiestudios">Aggie Studios</RectangleTile>
-                    <RectangleTile banner="images/aggiestudios/banner.png" href="/aggiestudios">Aggie Studios</RectangleTile>
+                    <RectangleTile banner="images/marbleous/banner.png" href="/marbleous">Marbleous</RectangleTile>
+                    <RectangleTile banner="images/swingdraw/banner.png" href="/swingdraw">Swing Draw</RectangleTile>
                 </TileRow>
 
                 <section id="About">
@@ -47,29 +72,25 @@ class Index extends React.Component {
                                 <Col md={8}>
                                     <h1 className="spacer text-center">About Me</h1>
 
-                                    <p className="spacer">Let me start this off by saying that I am delighted by the fact that you are here, right now, looking at this page. So let me introduce myself,
-                                    my name is Sven Kuhne. And in case you were wondering, I do realize that for such a professionally designed website, made by me of course, this whole
-                                    about me section seems rather unprofessional in comparison. But, I do need to express myself somewhere, so I figured this is the perfect place to
-                                    do it.</p>
+                                    <p className="spacer">Let me introduce myself! My name is Sven Kuhne, I'm a professional programmer, full time student, and also a professional animator and illustrator.
+                                    This website will give you a very good overview of the kinds of projects I am involved in and my accomplishments up until this current point in time. Though most of the website
+                                    is aimed at telling you what I've done, this section aims to show you who I am.</p>
 							
-                                    <p className="spacer">From the many different panels above, it becomes very obvious that I find myself interested in a large variety of different projects. In the past
-                                    I have accumulated skills in the fields of programming, illustration, and animation, which I continue to use in conjunction with each other, even
-                                    today. This website alone already acts as an expressive form of my passion for designing clean and modern looking UIs. UI and graphics in general 
-                                    have always been of interest to me. How do you tell which pixel to display in which color. What could possibly move and change so fast that the eye can 
-                                    barely see it change at all? How is this wonderful world of technology even possible? These are the questions I constantly  ask myself. Yet eventually,
-                                    much like with everything I start, I get an answer and an explanation. For me, its only a matter of time. This is why I like taking on so many different
-                                    tasks, it helps me explore and understand more about what is going on. It helps me create, it helps me share, and most importantly, it helps me grow.</p>
+                                    <p className="spacer">I've always been fond of learning and it is a constant goal of mine to become more knowledgable in different subjects. A lot of my experience comes from
+                                    projects that I work on for fun and this mindset has helped me to grow. I'm constantly looking for new opportunities and don't want to limit myself to a singular topic. Now that I am
+                                    a University Student, I can take my passions one step forward by participating in various clubs and organizations. Having a full schedule is a must, but it isn't always just work. Spending
+                                    time with friends and making time to have fun are also very important to me and help me be even more productive when I am working. I stand with the work hard, play hard philosophy and
+                                    want to get the most out of my life in the moment.</p>
 							
-                                    <p className="spacer">I continue to look for these opportunities to help me find new horizons and to allow me to exceed all of my previous expectations. I want to see
-                                    where my life will take me, and I am always ready to try something new. So why not give me a go? You can find my contact information below if you
-                                    want to offer me internships, or commissions.</p>
+                                    <p className="spacer">That being said, I am currently looking for internship opportunities for the summer of 2020. I am currently as second year with senior standing and will be
+                                    graduating in June of 2021, at which point I will start working full time in the industry.</p>
                                 </Col>
                             </Row>
                         </Container>
                     </Jumbotron>
                 </section>
 		
-                <section>
+                <section id="Contact">
                     <Container>
                         <Row>
                             <Col md={6}>

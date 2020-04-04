@@ -97,7 +97,7 @@ code {
   border-radius: 30px;
   background-color: #00000088;
   color: white !important;
-  opacity: 0.1;
+  opacity: 0.25;
   transition: opacity 0.25s;
 }
 
@@ -123,7 +123,7 @@ code {
 
 .flex-container .double {
   width: 40%;
-  min-width: 400px;
+  min-width: 250px;
   margin: 2.5%;
 }
 
@@ -176,7 +176,7 @@ code {
   cursor: pointer;
   align-items: flex-start;
   width: 40%;
-  min-width: 400px;
+  min-width: 250px;
 }
 
 .animated-square-tile{
@@ -190,6 +190,7 @@ code {
   color:white;
   margin: auto;
   font-family: 'Righteous';
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -221,13 +222,33 @@ code {
 
 @media only screen and (max-width: 1000px) {
   h1 {font-size:3rem;}
-  .flex-container .triple {min-width: 400px; width: 40%;}
-  .animated-square-tile {min-width: 400px; width: 40%;}
+  .flex-container .triple {min-width: 250px; width: 40%;}
+  .animated-square-tile {min-width: 250px; width: 40%;}
+}
+
+@media only screen and (max-width: 450px) {
+  .animated-tile-text {display: none;}
 }
 
 /**
  * Miscellaneous
  */
+
+ .document {
+   width: 100%;
+ }
+
+ .center-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .a {
+   max-width: 400px;
+   width: 100%;
+ }
 
 .spacer {
   margin-bottom: 32px;
@@ -243,6 +264,24 @@ code {
 
 footer {
   padding-top: 20px;
+}
+
+@media only screen and (max-width: 440px) {
+  .particle-index {
+    display: none;
+  }
+}
+
+.particle-index {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  filter: blur(6px);
+  overflow-x: hidden;
 }
 
 /**
